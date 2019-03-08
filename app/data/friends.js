@@ -1,18 +1,20 @@
 var friendsArray = [
     {
-      name: "Ahmed",
-      photoLink: "example.jpeg",
-      q1: 1,
-      q2: 2,
-      q3: 3,
-      q4: 4,
-      q5: 5,
-      q6: 3,
-      q7: 3,
-      q8: 4,
-      q9: 4,
-      q10: 5
+        "name": "Ahmed",
+        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "scores": [
+            5,
+            1,
+            4,
+            4,
+            5,
+            1,
+            2,
+            5,
+            4,
+            1
+        ]
     }
-  ];
-  
-  module.exports = friendsArray;
+];
+
+module.exports = friendsArray;
