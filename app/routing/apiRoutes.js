@@ -19,6 +19,7 @@ module.exports = function (app) {
         // })
         friendsData.push(req.body);
         //This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
+        //PSEUDOCODE: create a new variable which holds all of the numbers from the survey responses and then parseInt, compare that with the input that the user submitted by putting each of the answers into a new string, parseInt. Subtract and get the difference from each of the existing users in the API. After it loops through each user to get the differences, return the indexOf the lowest difference and send that through in the space that says "randomNum" currently.
 
         var randomNum = Math.floor(Math.random() * 10);
 
