@@ -11,6 +11,7 @@ module.exports = function (app) {
 
     app.post("/api/friends", function(req, res) {
         friendsData.push(req.body);
-        res.json(true);
+        //This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
+        res.json(friendsData);
     });
 };
