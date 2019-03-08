@@ -10,8 +10,16 @@ module.exports = function (app) {
     });
 
     app.post("/api/friends", function(req, res) {
+        console.log(req.body.scores)
+
+        var currentFriendScores = req.body.scores;
+
+        // var convertToNum = currentFriendScores.split(',').map(function(item) {
+        //     return parseInt(item, 10)
+        // })
         friendsData.push(req.body);
         //This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
-        res.json(friendsData);
+        
+        res.json(friendsData[3]);
     });
 };
