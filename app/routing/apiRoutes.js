@@ -9,7 +9,7 @@ module.exports = function (app) {
         res.json(friendsData);
     });
 
-    app.post("/api/friends", function(req, res) {
+    app.post("/api/friends", function (req, res) {
         console.log(req.body.scores)
 
         var currentFriendScores = req.body.scores;
@@ -19,7 +19,9 @@ module.exports = function (app) {
         // })
         friendsData.push(req.body);
         //This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
-        
-        res.json(friendsData[3]);
+
+        var randomNum = Math.floor(Math.random() * 10);
+
+        res.json(friendsData[randomNum]);
     });
 };
